@@ -34,6 +34,17 @@ div p {
 /* Target all p's and a's inside of divs */
 div p, div a {}
 
+.marquee {
+	font-size: 5em;
+	font-weight: bold;
+	background-image: url("http://stream1.gifsoup.com/view/837768/fireworks-o.gif");
+	color: white;
+}
+
+body {
+	background-image: url("https://coedmagazine.files.wordpress.com/2009/09/seizure.gif");
+}
+
 .header-alt {
 	-webkit-animation-name: example; 
   -webkit-animation-duration: 4s; 
@@ -41,16 +52,9 @@ div p, div a {}
   animation-duration: 4s;
 }
 
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
+	@keyframes example {
+    	from {background-color: red;}
+    	to {background-color: yellow;}
 
-.marquee {
-	font-size: 5em;
-	font-weight: bold;
-	background-image: url("http://stream1.gifsoup.com/view/837768/fireworks-o.gif")
-}
 
-body {
-	background-image: url("https://coedmagazine.files.wordpress.com/2009/09/seizure.gif");
 }
