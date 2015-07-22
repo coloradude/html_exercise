@@ -32,6 +32,10 @@ div p {
   font-style: italic;
 }
 
+.container {
+	display: inline-block;
+	padding-top: 50px;
+}
 /* Target all p's and a's inside of divs */
 div p, div a {}
 
@@ -46,6 +50,51 @@ body {
 	background-image: url("https://coedmagazine.files.wordpress.com/2009/09/seizure.gif");
 }
 
+nav:hover {
+	display: none;
+}
+nav {
+	text-align: center;
+	font-size: 4em;
+}
+
+
+.blink_text {
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 1s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: blinker;
+-moz-animation-duration: 1s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+
+ animation-name: blinker;
+ animation-duration: 1s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+
+}
+
+@-moz-keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+ }
+
+@-webkit-keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+ }
+
+@keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+ }
+
 .header-alt {
 	-webkit-animation-name: example; 
   -webkit-animation-duration: 4s; 
@@ -53,9 +102,8 @@ body {
   animation-duration: 4s;
 }
 
-	@keyframes example {
-    	from {background-color: red;}
-    	to {background-color: yellow;}
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
 
 
-}
